@@ -1,0 +1,3 @@
+﻿  RefvsValue.cpp
+D:\User Files\Documents\GitHub\Random-C-Project\CSSBootup\RefvsValue\RefvsValue.cpp(25,6): warning C4101:  'result': unreferenced local variable
+  RefvsValue.vcxproj -> D:\User Files\Documents\GitHub\Random-C-Project\CSSBootup\RefvsValue\Debug\RefvsValue.exe
