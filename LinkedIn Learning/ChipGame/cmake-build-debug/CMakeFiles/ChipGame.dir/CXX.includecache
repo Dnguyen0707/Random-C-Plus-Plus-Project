@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+D:/User Files/Documents/GitHub/Random-C-Plus-Plus-Project/LinkedIn Learning/ChipGame/chap04Challenge.cpp
+iostream
+-
+ctime
+-
+cstdlib
+-
+

@@ -2,8 +2,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/Chip_Ran.dir/Chip_Ran.cpp.obj"
   "Chip_Ran.exe"
   "Chip_Ran.exe.manifest"
-  "Chip_Ran.lib"
   "Chip_Ran.pdb"
+  "libChip_Ran.dll.a"
 )
 
 # Per-language clean rules from dependency scanning.

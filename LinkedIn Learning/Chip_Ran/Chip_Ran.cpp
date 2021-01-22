@@ -1,10 +1,15 @@
 #include <iostream>
 #include <ctime>
 #include <cstdlib>
+
 using namespace std;
 
 const int MAX_CHIPS = 100;
 const float MAX_TURN = .5;
+
+
+string FindPlayerName(string names[], bool playerTurn);
+
 int main()
 {
     //variable
@@ -37,14 +42,14 @@ int main()
             chipsMax = chipsInPile * MAX_TURN;
             do
             {
-                if (player1Turn)
-                {
-                    cout << playerName[0] << ", How many chips would you like to take?\n";
-                }
-                else
-                {
-                    cout << playerName[1] << ", How many chips would you like to take?\n";
-                }
+//                if (player1Turn)
+//                {
+                cout << FindPlayerName(playerName, player1Turn) << ", How many chips would you like to take?\n";
+//                }
+//                else
+//                {
+//                    cout << playerName[1] << ", How many chips would you like to take?\n";
+//                }
 
                 cout << "You can only take ";
                 if (chipsMax == 0)
@@ -57,8 +62,7 @@ int main()
                 }
 
                 cin >> chipsTaken;
-            }
-            while (chipsTaken > (chipsMax && (chipsInPile > 1));
+            } while (chipsTaken > (chipsMax && (chipsInPile > 1)));
 
             chipsInPile -= chipsTaken;
             cout << "There are " << chipsInPile << " left in the piles\n";
@@ -66,14 +70,14 @@ int main()
             if (chipsInPile == 0)
             {
                 gameOver = true;
-                if (player1Turn)
-                {
-                    cout << playerName[1] << ", you win!\n";
-                }
-                else
-                {
-                    cout << playerName[0] << ", you win!\n";
-                }
+//                if (player1Turn)
+//                {
+                cout << FindPlayerName(playerName, player1Turn) << ", you win!\n";
+//                }
+//                else
+//                {
+//                    cout << playerName[0] << ", you win!\n";
+//                }
             }
             else
             {
@@ -102,7 +106,16 @@ int main()
             }
         }
     }
-//    chipsTaken = (rand() % chipsMax) + 1;
-//    cout << "chips taken : " << chipsTaken << "\n";
+}
 
+string FindPlayerName(string names[], bool playerTurn)
+{
+    if (playerTurn == true)
+    {
+        return names[0];
+    }
+    else
+    {
+        return names[1];
+    }
 }
